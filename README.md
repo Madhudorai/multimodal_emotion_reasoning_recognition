@@ -1,5 +1,11 @@
-## MAC INSTALLATION
+## MULTIMODAL EMOTION REASONING AND RECOGNITION 
 
+# Description of Project 
+Affective computing task of emotion recognition in multimodal data (video, audio, language). We test on MELD- MELD has more than 1400 dialogues and 13000 utterances from Friends TV series. Multiple speakers participated in the dialogues. Each utterance in a dialogue has been labeled by any of these seven emotions -- Anger, Disgust, Sadness, Joy, Neutral, Surprise and Fear. MELD also has sentiment (positive, negative and neutral) annotation for each utterance.
+
+Our approach is instead of using fusion mechanisms on the unimodality encoders, we textualize visual and accoustic encodings and feed it into a large language model (here, LLama-2-7B). The prompts include information about the facial action units activated in the speaker over time (extracted from the OpenFace output) and the corresponding utterance of the speaker. The response from LLM analyzes the speaker's emotion and reasoning based on their facial expressions and utterances.
+
+## Setup and running the project 
 # 1. Environment
 using Homebrew, a package manager for macOS and Linux, to install various software packages for setting up a development environment. use bin bash commands:
 brew update
