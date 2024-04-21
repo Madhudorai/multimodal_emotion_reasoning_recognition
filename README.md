@@ -18,8 +18,10 @@ brew install wget
 
 brew install opencv
 
+Install additional libraries (transformers, huggingface,pandas, numpy,etc)
+
 # 2. cloning
-Clone repo [https://github.com/Madhudorai/YP.git]
+Clone repo [https://github.com/Madhudorai/YP.git] 
 
 # 3. Build
 cd OpenFace
@@ -38,8 +40,7 @@ bash download_models.sh
 
 cp lib/local/LandmarkDetector/model/patch_experts/*.dat build/bin/model/patch_experts/
 
-# 4. Facial Feature extraction
-using terminal
-
-path/to/Openface/build/bin/FeatureExtraction -f "C:\my videos\video.avi"
+# 4. Testing on MELD dataset
+Run the automate.py script. 
+Pass in 2 folders: folder with videos, csv file which contains utterance of speaker, along with episode number, speaker name as well as true labels. Video name, extracted facial features, corresponding utterance (prompt) gets stored in csv along with LLama model's emotional reasoning response. 
 
