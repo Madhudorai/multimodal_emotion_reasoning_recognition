@@ -1,4 +1,9 @@
 import pandas as pd
+import subprocess
+
+def run_openface(input_video_path):
+    command = f"Openface/build/bin/FeatureExtraction -f \"{input_video_path}\""
+    subprocess.run(command, shell=True)
 
 def process_csv(csv_path):
     # Read CSV file
@@ -45,8 +50,6 @@ def process_csv(csv_path):
     modified_df.to_csv(output_csv_path, index=False)
 
     return output_csv_path
-
-
 
 
 
