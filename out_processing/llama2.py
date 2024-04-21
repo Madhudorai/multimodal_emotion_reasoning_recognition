@@ -2,7 +2,7 @@ import torch
 import transformers
 
 from huggingface_hub import login 
-login(token = "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")
+login(token = "")
 
 model_id = "meta-llama/Llama-2-7B-chat-hf"
 
