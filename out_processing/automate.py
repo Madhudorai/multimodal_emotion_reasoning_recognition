@@ -61,7 +61,7 @@ def main(video_folder, data_csv_file, results_csv_file):
         os.remove(max_columns_path)
 
 # Example usage:
-video_folder = "/Users/swarsys/Documents/YP/testvideos"
+video_folder = "data/train/train_splits"
 csv_file = "data/train/train_sent_emo.csv"
 results_csv_file = "results/output_data.csv"
 main(video_folder, csv_file, results_csv_file)
