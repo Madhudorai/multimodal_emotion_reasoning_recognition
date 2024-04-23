@@ -24,6 +24,7 @@ brew install wget
 
 brew install opencv
 
+brew install ffmpeg@6
 Install additional libraries (transformers, huggingface,pandas, numpy,etc)
 
 # 2. cloning
