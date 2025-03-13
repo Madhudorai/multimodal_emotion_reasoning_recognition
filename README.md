@@ -5,7 +5,8 @@ Affective computing task of emotion recognition in multimodal data (video, audio
 
 Our approach is instead of using fusion mechanisms on the unimodality encoders, we textualize visual and accoustic encodings and feed it into a large language model (here, LLama-2-7B). The prompts include information about the facial action units activated in the speaker over time (extracted from the OpenFace output) and the corresponding utterance of the speaker. The response from LLM analyzes the speaker's emotion and reasoning based on their facial expressions and utterances.
 
-![image](https://github.com/user-attachments/assets/662684c6-38b8-4761-a738-897077799fe2)
+![image](https://github.com/user-attachments/assets/82036283-2dc6-40d1-8b7d-bc2deaa322bf)
+
 
 ## Setup and running the project 
 # 1. Environment
